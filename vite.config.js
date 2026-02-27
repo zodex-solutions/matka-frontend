@@ -1,17 +1,23 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import tailwindcss from "@tailwindcss/vite";
-// https://vite.dev/config/
 
 export default defineConfig({
   plugins: [react(), tailwindcss()],
+
+  optimizeDeps: {
+    include: ["tinymce", "@tinymce/tinymce-react"],
+  },
+
   build: {
     chunkSizeWarningLimit: 2000,
+
     commonjsOptions: {
       include: [/node_modules/, /tinymce/],
     },
+
     rollupOptions: {
-      external: ["tinymce", "@tinymce/tinymce-react"],
+      // ❌ external REMOVE KAR DIYA
       output: {
         manualChunks(id) {
           if (id.includes("node_modules")) {

@@ -143,8 +143,8 @@ export default function Login() {
       <div className="w-full max-w-md   rounded-2xl  backdrop-blur ">
         <div className="flex items-center justify-center">
           <img
-            src={logo}
-            className="h-30 rounded-full place-items-center mb-3"
+            // src={logo}
+            className="h-30 border w-30 rounded-full place-items-center mb-3"
           />
         </div>
         <h1 className="text-center text-3xl text-white font-bold tracking-wide">
@@ -212,7 +212,7 @@ export default function Login() {
           </a>
         </p>
 
-        <p className="text-center text-gray-400 mt-5 text-sm">
+        {/* <p className="text-center text-gray-400 mt-5 text-sm">
           Need help?{" "}
           <a
             href="https://wa.me/917726035987"
@@ -222,7 +222,7 @@ export default function Login() {
           >
             Contact Support
           </a>
-        </p>
+        </p> */}
       </div>
 
       <style>{`

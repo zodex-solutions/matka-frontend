@@ -123,7 +123,7 @@ export default function SignupPage() {
     <div className="min-h-screen flex items-center justify-center px-4">
       <div className="w-full max-w-md rounded-2xl backdrop-blur">
         <div className="flex items-center justify-center">
-          <img src={logo} className="h-30 rounded-full mb-3" />
+          <img  className="h-30 border w-30 rounded-full mb-3" />
         </div>
 
         <h1 className="text-center text-3xl text-white font-bold">
